@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar style="background-color: red;">
+
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title>Início</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="header">
+    <div class="imagemHeader"><img class="imgLogo" src="/../assets/senacLogo.jpg" alt=""></div>
+  </div>
+
+  <div class="principal">
+    <div class="font01">
+      <p class="h1">É HORA DE APRENDER</p>
+    </div>
+    <div class="font02">
+      <p>EM CASA</p>
+    </div>
+  </div>
+
+  <div class="content">
+    <button class="botao"><img src="/../assets/pino.png" alt="">Mural da Turma</button>
+    <button class="botao"><img src="/../assets/pino.png" alt="">Mural do Estudante</button>
+    <button class="botao"><img src="/../assets/folha.png" alt="">Lista de Desejos</button>
+    <button class="botao btb"><img src="/../assets/caderno.png" alt="">Espaço do Estudante</button>
+    <button class="botao btb"><img src="/../assets/recepcao.png" alt="">Administrativo</button>
+    <button class="botao btb"><img src="/../assets/check.png" alt="">Avaliação UC/ Instrutor</button>
+    <div class="content2">
+     <a routerLink="/msg/inbox"><div class="faleCom">Falar com o Supervisor</div></a>
+      <a routerLink="/msg/inbox"><div class="faleCom">Falar com o Instrutor</div></a>
+      <a routerLink="/msg/inbox"><div class="faleCom">Falar com o Especialista</div></a>
+    </div>
+  </div>
+
+
+  <!-- 3.1) Exibe nome (displayName) do usuário se ele está logado -->
+  <!-- <h2>Olá<span *ngIf="userData"> {{ userData.displayName }}</span>!</h2>
+
+    <div *ngIf="userData" >
+     <ion-button>Carousel</ion-button>
+    </div> -->
+
+  <!-- 10.1) Botão de login para usuário não logado -->
+  <div *ngIf="!userData" class="ion-text-center">
+    <h3>Logue-se!</h3>
+    <p>Para usar todos os recursos deste aplicativo, você precisa se identificar.</p>
+    <ion-button routerLink="/user/login">
+      <ion-icon name="log-in" slot="start"></ion-icon>&nbsp;
+      Entrar / Login
+    </ion-button>
+  </div>
+
+</ion-content>
+<ion-footer class="sociais" *ngIf="userData" class="ion-no-border">
+  <ion-toolbar>
+    <a class="redeSocial socialMargin" href="https://www.facebook.com/">
+      <ion-icon class="redeSocial" name="logo-facebook"></ion-icon>
+    </a>
+    <a class="redeSocial" href="https://twitter.com/">
+      <ion-icon class="redeSocial" name="logo-twitter"></ion-icon>
+    </a>
+    <a class="redeSocial" href="https://www.instagram.com/">
+      <ion-icon class="redeSocial" name="logo-instagram"></ion-icon>
+    </a>
+    <a class="redeSocial" href="https://www.youtube.com/">
+      <ion-icon class="redeSocial" name="logo-youtube"></ion-icon>
+    </a>
+    <h5 style="text-align: center;">Ulib© 2020 - Busquem Conhecimento</h5>
+  </ion-toolbar>
+
+</ion-footer>

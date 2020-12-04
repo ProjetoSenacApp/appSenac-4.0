@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 9rem;
+    background-color: #155491;
+    overflow: hidden;
+}
+
+.imgLogo {
+    height: 15rem;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 15rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.font01 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    color: #F39200;
+}
+
+.font02 {
+    font-size: 65px;
+    color: #155491;
+    font-weight: bolder;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 35rem;
+    background-color: #155491;
+}
+
+.botao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1rem;
+    width: 106px;
+    height: 106px;
+    background-color: #124473;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    padding: 0 5px 35px 5px;
+}
+
+.btb {
+    margin-top: -8rem;
+}
+
+@media screen and(min-width: 768px) {
+    .btb {
+        margin-top: -1rem;
+        width: 106px;
+        height: 106px;
+    }
+}
+
+.content>button>img {
+    width: 80px;
+    margin-top: -10px;
+    margin-bottom: 0.25rem;
+}
+
+.content2 {
+    text-align: center;
+    width: 90%;
+    height: 10px;
+    margin-top: -9rem;
+}
+
+.faleCom {
+    color: #124473;
+    margin-bottom: 1rem;
+    padding: .5rem 0;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: #F0C595;
+    border-radius: 15px;
+}
+
+ion-toolbar,
+ion-footer {
+    --background: var(--ion-toolbar-background, var(--ion-color-step-50, #155491));
+    color: #F39200;
+}
+
+ion-toolbar {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.redeSocial {
+    font-size: 50px;
+    margin: -7px .5rem;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
